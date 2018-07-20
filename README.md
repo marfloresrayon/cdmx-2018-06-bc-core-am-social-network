@@ -55,16 +55,19 @@ completa es compatible con dispositivos móviles.
 * Propiciar el aprendizaje conjunto.
 
 ## :bar_chart: Benchmark
+
 Las comunidades online son un gran lugar para buscar soluciones, entablar relaciones 
 profesionales y recibir feedback en cuanto a nuestros diseños. A continuación las más 
 usadas dentro del área de diseño de experiencia de usuarix alrededor del :earth_americas: 
 
-Realizamos un primer benchmark a plataformas web con temáticas de diseño UX y áreas afines 
+Realizamos un primer benchmark a plataformas web con temáticas de diseño UX y áreas afines:
 [Primera versión con 14 plataformas web](https://docs.google.com/spreadsheets/d/12TgtT0ZyRIrfcXpkCuPqBlR949jqibWoMIb1VhdM80w/edit?usp=sharing)
+
 A partir de este, decidimos concentrarnos en las siguientes redes debido a su éxito, uso 
 y crecimiento continuo:
 
 ### Dribble
+
   Su meta es ayudar a lxs diseñadorxs a construir su propio equipo y marca, 
   se describe como una comunidad vibrante y una red social apta para cualquier 
   persona a la que le interese el diseño. Su página principal funciona como un 
@@ -82,6 +85,7 @@ y crecimiento continuo:
 ![Muro Dribble](/src/images/Muro/mtdribble.png)
 
 ### Behance
+
   Es una plataforma online gratuita de Adobe que sirve para mostrar y descubrir 
   trabajos creativos o portafolios. Esto forma una red de personas, universidades,
   agencias creativas y empresas, es así que se denomina como una red social de creativos. 
@@ -95,10 +99,11 @@ y crecimiento continuo:
   128 campos creativos.
 
 #### LogIn/Sign up 
-![LogIn ]
+![LogIn Dribble](/src/images/LogIn/subehance.png)
 #### Perfil de usuaria
-
+![Perfil de usuaria Dribble](/src/images/PerfilUsuaria/pubehance.png)
 #### Muro/Timeline
+![Muro Dribble](/src/images/Muro/mtbehance.png)
 
 ## :information_desk_person: Acercamiento a usuarias
 
