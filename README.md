@@ -15,7 +15,7 @@ en los que le gustaría invertir:
 
 Después de una primera entrevista nos hace hincapié en su interés por crear 
 comunidad a partir de la red social que crearemos, es así que elegimos concentrarnos
-en los temas de educación :pencil2: y feminismo :two_women_holding_hands: 
+en los temas de educación :memo: y feminismo :two_women_holding_hands: 
 
 ## :heavy_multiplication_x: El problema
 
@@ -99,56 +99,64 @@ y crecimiento continuo:
   128 campos creativos.
 
 #### LogIn/Sign up 
-![LogIn Dribble](/src/images/LogIn/subehance.png)
+![LogIn Behance](/src/images/LogIn/subehance.png)
 #### Perfil de usuaria
-![Perfil de usuaria Dribble](/src/images/PerfilUsuaria/pubehance.png)
+![Perfil de usuaria Behance](/src/images/PerfilUsuaria/pubehance.png)
 #### Muro/Timeline
-![Muro Dribble](/src/images/Muro/mtbehance.png)
+![Muro Behance](/src/images/Muro/mtbehance.png)
+
+## :art: Logo y paleta de colores
+
+![LogIng UX-COM](/src/images/LogoPaleta/logouxcom.png)
+
+## :pencil2: Sketches
+
+## :iphone: Mockup
+![LogIng UX-COM](/src/images/Mockup/ruxcom.png)
 
 ## :information_desk_person: Acercamiento a usuarias
 
-[Encuesta realizada a 23 posibles usuarias](https://docs.google.com/spreadsheets/d/1tdL_Z2u1T8LmSBOT33srOw7rCvrES5CCrji7YjZg6cg/edit#gid=273965330)
-Usuarixs: 
-  Mujeres interesadas en la tecnología, con uso avanzado de la misma. 
-  Se desempeñan en el ámbito laboral del diseño de experiencia de usuaria, o en áreas afines. 
-  Con interés en el diseño de experiencia de usuaria o en áreas afines. 
-  Interesadas en compartir experiencias profesionales.
-  Interesadas en resolver dudas y contribuir en una comunidad de mujeres dentro del mundo tech.
-  Realizan estudios en el área de diseño de experiencia de usuaria o en áreas afines. 
-  Empresas/Startups con interés en el área de diseño de experiencia de usuaria o áreas afines.
+[Encuesta realizada a 23 posibles usuarias de entre 17 a 35 años](https://docs.google.com/spreadsheets/d/1tdL_Z2u1T8LmSBOT33srOw7rCvrES5CCrji7YjZg6cg/edit#gid=273965330)
 
-Necesidades de las usuarias:
-  Con el fin de conocer las necesidades que nuestras usuarias resolverán por medio de la red que desarrollamos, realizamos una encuesta con 23 mujeres de entre 17 y 35 años. A continuación presentamos los resultados 
-Destacamos las siguientes necesidades:
-  Complementar y compartir conocimientos sobre UX
-  Complementar su quehacer profesional como programadoras o diseñadoras de experiencia de usuaria
-  Hacer comunidad dentro del ámbito donde puedan encontrar apoyo
-  Conocer experiencias de otras mujeres dentro del ámbito profesional
-  Intercambiar y obtener información actualizada
-  Poder compartir su trabajo
-  Acceder a oportunidades laborales
+##### :computer: Sobre nuestras usuarias
 
-Objetivos de las usuarias: 
-  Formar parte de una red social en la cual puedan intercambiar información sobre UX, así como compartir experiencias laborales con otras mujeres, ser parte de una comunidad activa y actualizada, y al mismo tiempo poder compartir su trabajo para así acceder a oportunidades laborales dentro del rubro. 
+* Mujeres interesadas en la tecnología, con uso avanzado de la misma. 
+* Tienen interés, realizan estudios y/o se desempeñan en el ámbito laboral del diseño
+  de experiencia de usuarix, o en áreas afines. 
+* Están interesadas en compartir experiencias profesionales, así como en resolver dudas 
+  y contribuir en una comunidad de mujeres dentro del mundo tech.
 
-Pain points: 
-  Dificultad al encontrar recursos u opciones educativas de calidad sobre UX. 
-  Consideran al UX como un trabajo muy pesado, donde cuesta aterrizar ideas durante su desarrollo.
-  No conocen a más UXers en el medio para poder hablar sobre el tema.
-  No existen suficientes recursos que profundicen en los recursos y herramientas. 
-  Existe mucho material informativo sin rumbo fijo. 
-  Aprender a lidiar con lo que los clientes desean. 
-  Existe información muy variada pero no específica. 
-  Existen muy pocos cursos accesibles y con acreditación.
+###### Necesidades
 
-Sentimientos:
-  Confusión.
-  Pesadez. 
-  Desinformación.  
-  Abrumación. 
-  Falta de apoyo. 
-  Desconocimiento.
-  Soledad.
+* Continuar aprendiendo sobre el diseño de experiencia de usuarix
+* Encontrar herramientas e información que les ayuden a mantenerse actualizadas y al 
+  mismo tiempo complementar su quehacer profesional como programadoras o diseñadoras 
+  de experiencia de usuaria
+* Ser parte de una comunidad que las reconozca y donde puedan encontrar apoyo
+* Intercambiar experiencias con otras mujeres dentro del mundo tech
+* Crear relaciones profesionales 
 
-Logo y paleta de color: 
-  (https://www.figma.com/file/HZZFMspweDqfLZG706yjFaAq/UX-COM)
+##### Objetivo de la usuaria
+
+  Formar parte de una red social que contribuya a la creación de una comunidad que 
+  genere conocimientos en conjunto sobre UX y áreas afines, así como a formar 
+  relaciones profesionales y nuevas oportunidades laborales de manera continua. 
+
+##### :weary: Pain points 
+  
+  * Dificultad al encontrar recursos u opciones educativas de calidad sobre UX. 
+  * Consideran al UX como un trabajo muy pesado, donde cuesta aterrizar ideas 
+    durante su desarrollo.
+  * No conocen a más UXers en el medio para poder hablar sobre el tema.
+  * Existen muy pocos cursos accesibles y con acreditación.
+  * Consideran que el área de UX está en crecimiento y eso dificulta el encontrar 
+    información puntual y especializada sobre los diferentes temas. 
+
+##### :person_frowning: Sentimientos:
+
+  * Confusión.
+  * Pesadez. 
+  * Desinformación.  
+  * Abrumación. 
+  * Falta de apoyo. 
+  * Desconocimiento.
