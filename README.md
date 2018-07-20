@@ -75,10 +75,11 @@ y crecimiento continuo:
   sus trabajos creativos. 
 
 #### LogIn/Sign up 
-![LogIn Dribble]()
+![LogIn Dribble](/src/images/LogIn/sudribble.png)
 #### Perfil de usuaria
-![LogIn Dribble](src/images/PerfilUsuaria/Perfil de usuaria - Dribble.png)
+![Perfil de usuaria Dribble](/src/images/PerfilUsuaria/pudribble.png)
 #### Muro/Timeline
+![Muro Dribble](/src/images/Muro/mtdribble.png)
 
 ### Behance
   Es una plataforma online gratuita de Adobe que sirve para mostrar y descubrir 
