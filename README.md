@@ -155,10 +155,14 @@ debido a su éxito, uso y crecimiento continuo:
 
 ## :pencil2: Sketches
 
+![LogIn UX-COM](/src/images/Sketch/login.jpg)
+
+![Perfil de usuaria UX-COM](/src/images/Sketch/perfil.jpg)
+
 ## :art: Logo y paleta de colores
 
-![LogIng UX-COM](/src/images/LogoPaleta/logouxcom.png)
+![LogIn UX-COM](/src/images/LogoPaleta/logouxcom.png)
 
 ## :iphone: Mockup
-![LogIng UX-COM](/src/images/Mockup/ruxcom.png)
+![LogIn UX-COM](/src/images/Mockup/ruxcom.png)
 
