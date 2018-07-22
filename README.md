@@ -15,7 +15,7 @@ en los que le gustaría invertir:
 
 Después de una primera entrevista nos hace hincapié en su interés por crear 
 comunidad a partir de la red social que crearemos, es así que elegimos concentrarnos
-en los temas de educación :memo: y feminismo :two_women_holding_hands: 
+en los temas de educación :memo:, más específicamente diseño UX, y feminismo :two_women_holding_hands: 
 
 ## :heavy_multiplication_x: El problema
 
@@ -26,8 +26,9 @@ experiencia de usuarix.
 * Existe un crecimiento en la demanda laboral dentro del campo UX.
 * Debido a la amplitud de información y herramientas disponibles, el aprendizaje es 
   en su mayor parte autodidacta.
-* Deseamos contribuir a disminuir la brecha de género dentro del mundo tech, al 
-  generar comunidad e interacciones cimentadas en la sororidad dentro de la red social.
+* Existe una brecha de género dentro del mundo tech, deseamos contribuir a su 
+  disminución al generar comunidad e interacciones cimentadas en la sororidad 
+  dentro de la red social.
 
 ## :heavy_check_mark: La solución
 
@@ -38,13 +39,13 @@ parte de una comunidad activa y visible dentro del mundo tech.
 
 Diseñamos la interfaz como una experiencia intuitiva, creamos una página web fácil de 
 explorar, permitiendo que el contenido sobresalga.
-A cada sección se le asignó un color en especial para hacerlas de fácil identificación. 
-La paleta de colores elegida, gira en torno a la idea de femineidad tecnológica, 
+A cada sección le asignamos color en especial para hacerlas de fácil identificación. 
+La paleta de colores elegida gira en torno a la idea de femineidad tecnológica, 
 creativa e innovadora. 
 Usando una tipografía _____ para los títulos y una ________ para el texto, creamos 
 un sistema tipográfico funcional. 
 Apuntamos a generar un sentido de profesionalismo y simplicidad moderna. La red social 
-completa es compatible con dispositivos móviles.
+es accesible a través de dispositivos móviles. 
 
 ## :dart: Objetivos
 
@@ -58,13 +59,13 @@ completa es compatible con dispositivos móviles.
 
 Las comunidades online son un gran lugar para buscar soluciones, entablar relaciones 
 profesionales y recibir feedback en cuanto a nuestros diseños. A continuación las más 
-usadas dentro del área de diseño de experiencia de usuarix alrededor del :earth_americas: 
+usadas dentro del área de diseño de experiencia de usuarix alrededor del mundo :earth_americas: 
 
 Realizamos un primer benchmark a plataformas web con temáticas de diseño UX y áreas afines:
-[Primera versión con 14 plataformas web](https://docs.google.com/spreadsheets/d/12TgtT0ZyRIrfcXpkCuPqBlR949jqibWoMIb1VhdM80w/edit?usp=sharing)
+[Benchmark realizado con 14 plataformas web](https://docs.google.com/spreadsheets/d/12TgtT0ZyRIrfcXpkCuPqBlR949jqibWoMIb1VhdM80w/edit?usp=sharing)
 
-A partir de este, decidimos concentrarnos en las siguientes redes debido a su éxito, uso 
-y crecimiento continuo:
+A partir de este primer acercamiento, decidimos concentrarnos en las dos siguientes redes 
+debido a su éxito, uso y crecimiento continuo:
 
 ### Dribble
 
@@ -104,15 +105,6 @@ y crecimiento continuo:
 ![Perfil de usuaria Behance](/src/images/PerfilUsuaria/pubehance.png)
 #### Muro/Timeline
 ![Muro Behance](/src/images/Muro/mtbehance.png)
-
-## :art: Logo y paleta de colores
-
-![LogIng UX-COM](/src/images/LogoPaleta/logouxcom.png)
-
-## :pencil2: Sketches
-
-## :iphone: Mockup
-![LogIng UX-COM](/src/images/Mockup/ruxcom.png)
 
 ## :information_desk_person: Acercamiento a usuarias
 
@@ -160,3 +152,13 @@ y crecimiento continuo:
   * Abrumación. 
   * Falta de apoyo. 
   * Desconocimiento.
+
+## :pencil2: Sketches
+
+## :art: Logo y paleta de colores
+
+![LogIng UX-COM](/src/images/LogoPaleta/logouxcom.png)
+
+## :iphone: Mockup
+![LogIng UX-COM](/src/images/Mockup/ruxcom.png)
+
