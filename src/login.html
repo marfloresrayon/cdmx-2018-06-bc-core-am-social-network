@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,7 +28,7 @@ Ingresa comentario
 </ul>
 </form>
 
-  <!--<div class="limiter">
+  <div class="limiter">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
       <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
         <form class="login100-form validate-form">
@@ -58,13 +58,54 @@ Ingresa comentario
           </div>
         </form>
       </div>
-    </div> -->
-    <!--Se agregan los script al antes de que termine el body-->
+    </div>  -->
+    <!--Se agregan los script al antes de que termine el body
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
     <script src="js/index.js"></script>
     <script src="js/app.js"></script>
+</body>
+
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UX-COMunity</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+</head>
+
+<body>
+  <form class="limiter">
+      <form class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+        <h1>Login</h1>
+        <form class="container">
+         <input  id="email" type="email" placeholder="Email" required="">
+         <input id="password" type="password" placeholder="Password" required="">
+         <button id="btnLogin" class="btn btn-secondary">Log In</button>
+         <button id="btnSign" class="btn btn-secondary">Sign Up</button>
+         <button id="btnLogout" class="btn btn-action hide"> Log Out</button>
+        </form>
+      </form>
+  </form>
+
+  <div id="Google">
+    <button onclick = "googleSignin()">Google+</button>
+    <button onclick = "googleSignout()">Google Sign out</button>
+</div>
+
+    <!--Se agregan los script al antes de que termine el body-->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+    <script src="js/login-index.js"></script>
+    <script src="js/login-app.js"></script>
 </body>
 
 </html>
