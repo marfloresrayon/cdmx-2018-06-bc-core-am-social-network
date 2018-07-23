@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/login-style.css" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand:700" rel="stylesheet">
+  <title>UX-COM</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class="row font-text">
+      <div id="auth-login" class="col s12">
+        <p class="center-align marg-top col s10 offset-s1">Forma parte de la comunidad</p>
+        <img class="responsive-img col s8 offset-s2" src="../images/LogoPaleta/logouxcom.png" alt="Logo-UX-COM">
+      </div>
+    </header>
+  </div>
+  <main class="row font-text">
+    <div id="photo"></div>
+    <div id="data"></div>
+    <div id="data2"></div>
+    <div id="auth-login2" class="col s12">
+      <p class="center-align col s8">Regístrate con tu cuenta de:</p>
+      <button id="login-google" class="waves-effect waves-light btng col s10 offset-s1" type="submit">Google</button>
+      <p class="center-align col s12 m12 l12">o
+        <br> Ingresa tus datos
+        <br> manualmente</p>
+      <p class="center-align col s5 log-text">Tu nombre:</p>
+      <input class="col s9 offset-s2 in-log validate">
+      <p class="center-align col s7 log-text">Tu correo electrónico:</p>
+      <input class="col s9 offset-s2 in-log validate">
+      <p class="center-align col s6 log-text">Tu contraseña:</p>
+      <input class="col s9 offset-s2 in-log validate">
+      <p class="center-align col s10 offset-s1 check">
+        <label>
+          <input type="radio" />
+          <span>Confirmo ser mujer mayor de 18 años</span>
+        </label>
+      </p>
+      <div class="center-align col s12">
+        <p>Si ya tienes cuenta
+          <button class="bbtn waves-effect waves-light">inicia sesión.</button>
+        </p>
+      </div>
+      <button class="col s10 offset-s1 btn-reg waves-effect waves-light">Registrarme</button>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB90dz8cu4Yk3lfkAcryi4B8PWM8lIlP8A",
+      authDomain: "ux-community.firebaseapp.com",
+      databaseURL: "https://ux-community.firebaseio.com",
+      projectId: "ux-community",
+      storageBucket: "ux-community.appspot.com",
+      messagingSenderId: "1069742951667"
+    };
+    firebase.initializeApp(config);
+
+  </script>
+  <script src="../js/login.js"></script>
+
+</body>
+
+</html>
