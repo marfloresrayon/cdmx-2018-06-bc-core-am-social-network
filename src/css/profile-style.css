@@ -1,0 +1,85 @@
+/*-----Clases generales---------*/
+
+body{
+    height: 100%;
+    background-color: #f2f2f2;  
+}
+.fixed {
+    position: fixed;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mt-5 {
+    margin-top: 5%;
+}
+.pdt-5{
+    padding-top: 5vh;
+}
+.pdt-10{
+    padding-top: 10vh;
+}
+
+.pdt-20{
+    padding: 20vh 0;
+}
+.pdt-40{
+    padding: 40vh 0;
+}
+.cmorado{
+    color:#5A0F89 ;
+}
+
+.cazul{
+ color: #45A2E0;   
+}
+/*-----Fin Clases generales---------*/
+
+
+/*----Inicio Side Bar--*/
+.side-nav {
+    background-color: #131313;
+}
+
+.side-nav li>a {
+    color: whitesmoke;
+}
+
+.side-nav li>a:hover {
+    color: #101C24;
+    background-color: #fff;
+}
+/*----Fin  Side Bar--*/
+
+
+/*----Inicio Nav Bar Mobile--*/
+
+.navMobile{
+    background-color: #ffffff;
+    /*-opacity: 0.6;--*/
+}
+.logoNav{
+    width: 90%;
+}
+/*----Fin Nav Bar Mobile--*/
+
+
+/*----Inicio tarjeta de Usuaria--*/
+.tarjetaUsuaria{
+    margin-top: 10%;
+    color: #5A0F89; 
+}
+
+/*----Fin tarjeta de Usuaria--*/
+
+
+
+/*----Inicio Proyectos de Usuaria--*/
+.btnCompartir{
+ background-color: #45A2E0;
+ color: white;
+ border: none;
+ border-radius: 5px;
+    height: 2em;
+}
+/*----Fin Proyectos de Usuaria--*/
