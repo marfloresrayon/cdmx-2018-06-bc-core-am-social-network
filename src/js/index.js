@@ -18,7 +18,7 @@ const btnSignUp = document.getElementById(`btnSignUp`);
 const btnLogout = document.getElementById('btnLogout');
 
     // Se agrega el evento click para el boton LogIn
-    btnLogin.addEventListener( 'click', e => {     
+    btnLogin.addEventListener( 'click', m => {     
     //Obteniendo e-mail y password
     console.log('se escucho el evento click en el boton login')
     const email = txtEmail.value;
@@ -26,12 +26,13 @@ const btnLogout = document.getElementById('btnLogout');
     const auth = firebase.auth();
     // Se entra con Sign In
     const promise = auth.signInWithEmailAndPassword(email, passw);
-    promise.catch(e => console.log(e.message));
+    promise.catch(m => console.log(m.message));
 
 });
     // Se agrega el evento click para el boton SignUp
     btnSignUp.addEventListener('click', e =>{
-    //Creando usuarios con el btnSignUp
+    console.log('Se escucho el evento de Sign Up')
+        //Registrando usuarios con el btnSignUp
     const email = txtEmail.value;
     const passw = txtPassword.value;
     const auth = firebase.auth();
@@ -51,10 +52,7 @@ const btnLogout = document.getElementById('btnLogout');
         console.log('Not logged in'); 
         btnLogout.classList.add('hide');   
         }
+
         });
     });
-
-
-
-
 }());
