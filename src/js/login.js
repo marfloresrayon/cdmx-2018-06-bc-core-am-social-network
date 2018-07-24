@@ -1,4 +1,5 @@
 //Creando Login con Google
+console.log("google activo");
 var provider = new firebase.auth.GoogleAuthProvider();
 
 $('#login-google').click(function () {
