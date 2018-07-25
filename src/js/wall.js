@@ -1,10 +1,7 @@
 // Con esto se inicializa Nube de firestore a través de Firebase
   console.log('agregado wall.js');
-    let db = firebase.firestore();
+   /* let db = firebase.firestore();
 
-
-    
-  
   const boton = document.getElementById('botonCompartir');
   
   boton.addEventListener('click', event => {
@@ -87,7 +84,7 @@
       // The document probably doesn't exist.
       console.error('Error updating document: ', error);
     });
-  };
+  };*/
   
   
 
@@ -95,9 +92,9 @@
 
 
 
-/* Declarando las variables a utilizar
+//Declarando las variables a utilizar
 // Comentario sin sentido 
-let db = firebase.firestore();
+const db = firebase.firestore();
 const publicar = () => {
     firebase.auth().onAuthStateChanged(user =>{
         if(user) {
@@ -130,4 +127,4 @@ const publicar = () => {
         <div> Publicado por: ${element.data().user}</div>`
     })
     document.getElementById('lista').innerHTML = result ;
-}*/
+}
