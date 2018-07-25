@@ -166,3 +166,4 @@ debido a su éxito, uso y crecimiento continuo:
 ## :iphone: Mockup
 ![LogIn UX-COM](/src/images/Mockup/ruxcom.png)
 
+![Perfil UX-COM](/src/images/Mockup/Perfil-usuaria.png)
