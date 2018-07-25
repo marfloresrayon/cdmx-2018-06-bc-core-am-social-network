@@ -14,10 +14,10 @@ $('#login-google').click(function () {
       $('#data').append("<div> " + result.user.displayName + " </div>");
       $('#data2').append("<div> " + result.user.email + " </div>");
     })
-    .then(function (profile) {
-      signIn(result.user);
+    // .then(function (profile) {
+    //   signIn(result.user);
 
-    });
+    // });
 });
 
 
