@@ -1,5 +1,5 @@
 // Declarando las variables a utilizar
-
+// Comentario sin sentido 
 let db = firebase.firestore();
 const publicar = () => {
     firebase.auth().onAuthStateChanged(user =>{
