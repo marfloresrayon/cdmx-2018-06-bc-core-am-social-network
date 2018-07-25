@@ -7,17 +7,18 @@ $('#login-google').click(function () {
     .then(function (result) {
       console.log(result.user);
       saveData(result.user);
-      $('#auth-login').hide();
-      $('#auth-login2').hide();
-      $('#photo').append("<img src='" + result.user.photoURL + "'/>");
-      $('#data').append("<div> "+ result.user.displayName + " </div>");
-      $('#data2').append("<div> "+ result.user.email + " </div>");
+      signIn();
+    //   $('#auth-login').hide();
+    //   $('#auth-login2').hide();
+    //   $('#photo').append("<img src='" + result.user.photoURL + "'/>");
+    //   $('#data').append("<div> "+ result.user.displayName + " </div>");
+    //   $('#data2').append("<div> "+ result.user.email + " </div>");
     });
 
 });
 
 //Guardando los datos de forma automática
-function saveData(user){
+let saveData = (user) => {
     const usuaria = {
         uid: user.uid,
         nombre: user.displayName,
@@ -27,3 +28,9 @@ function saveData(user){
     firebase.database().ref("usuarias/" + user.uid)
     .set(usuaria)
 }
+
+//Pasando de Login a Profile
+document.getElementById("login-google").addEventListener("click", signIn = () => {
+    window.location.assign("https://marfloresrayon.github.io/cdmx-2018-06-bc-core-am-social-network/src/views/profile.html")
+});
+
