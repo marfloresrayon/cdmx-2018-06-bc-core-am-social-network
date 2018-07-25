@@ -40,6 +40,9 @@ signUp.addEventListener("click", e =>{
 //mandamos los valores de email y password como parámetros al método createUserEmailAndPassword
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
+    btnLogout.addEventListener('click', e =>{
+     firebase.auth().signOut();   
+    });
 
   
     // logout.addEventListener("click", h =>{
