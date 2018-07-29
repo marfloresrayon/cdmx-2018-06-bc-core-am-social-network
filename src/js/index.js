@@ -37,7 +37,7 @@ signUp.addEventListener("click", e =>{
     const email= txtEmail.value;
     const password = txtPassword.value;
     const auth = firebase.auth();
-    alert("Registro exitoso, Bienvenida!");
+    alert("Registro exitoso ¡Bienvenida! Haz clic en Iniciar sesión.");
 //mandamos los valores de email y password como parámetros al método createUserEmailAndPassword
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
