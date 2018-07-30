@@ -15,10 +15,10 @@ $('#login-google').click(function () {
       $('#data').append("<div> " + result.user.displayName + " </div>");
       $('#data2').append("<div> " + result.user.email + " </div>");
     })
-    // .then(function (profile) {
-    //   signIn(result.user);
+  // .then(function (profile) {
+  //   signIn(result.user);
 
-    // });
+  // });
 });
 
 
@@ -34,4 +34,50 @@ let saveData = (user) => {
     .set(usuaria)
 }
 
+//Checando login con teléfono
+firebase.auth().onAuthStateChanged(function(usuaria) {
+  if (usuaria) {
+      console.log("Exitoso")
+  } else {
+      console.log("Fallido")
+  }
+});
+//Parte que se moverá a DOM
+var btnNumber = document.getElementById("btNum");
+var btnCode = document.getElementById("code-validate");
+
+
+//Login con número
+btnNumber.addEventListener('click', function () {
+  var phoneNumber = document.getElementById("num-cel").value;
+  console.log(phoneNumber)
+  window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+  var appVerifier = window.recaptchaVerifier;
+
+  firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+    .then(function (confirmationResult) {
+      console.log(confirmationResult)
+      window.confirmationResult = confirmationResult
+    }).catch(function (error) {
+      console.log(error)
+    });
+})
+
+btnCode.addEventListener('click', function(){
+  var validationCode = document.getElementById('code').value
+  console.log(validationCode)
+  window.confirmationResult.confirm(code)
+  .then(function (result) {
+    // User signed in successfully.
+    var user = result.user;
+    console.log(user)
+    firebase.database().ref("phone/usuarias/" + user.uid).update({
+      uid:user.uid,
+      phoneNumber:user.phoneNumber
+    })
+
+  }).catch(function (error) {
+    console.log(error)
+  });
+})
 
