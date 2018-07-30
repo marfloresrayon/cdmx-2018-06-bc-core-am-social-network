@@ -42,9 +42,10 @@ firebase.auth().onAuthStateChanged(function(usuaria) {
       console.log("Fallido")
   }
 });
+
 //Parte que se moverá a DOM
 var btnNumber = document.getElementById("btNum");
-var btnCode = document.getElementById("code-validate");
+var btnCode = document.getElementById("btCode");
 
 
 //Login con número
@@ -64,8 +65,8 @@ btnNumber.addEventListener('click', function () {
 })
 
 btnCode.addEventListener('click', function(){
-  var validationCode = document.getElementById('code').value
-  console.log(validationCode)
+  var validCode = document.getElementById('sentCode').value
+  console.log(validCode)
   window.confirmationResult.confirm(code)
   .then(function (result) {
     // User signed in successfully.

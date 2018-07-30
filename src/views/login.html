@@ -16,7 +16,7 @@
   <div class="container-fluid">
     <header class="row font-text-purple">
       <div id="auth-login" class="col s12 m12">
-        <p class="center-align marg-top col s10 offset-s1 ">Forma parte de la comunidad</p>
+        <p class="center-align marg-top col s10 offset-s1 m12">Forma parte de la comunidad</p>
         <img class="responsive-img col s8 offset-s2 m6 offset-m3" src="../images/LogoPaleta/logouxcom.png" alt="Logo-UX-COM">
       </div>
     </header>
@@ -30,28 +30,28 @@
     </div>
     <!--Login con Google-->
     <div id="auth-login2" class="col s12">
-      <p class="center-align col s9 offset-s1">Regístrate con tu cuenta de:</p>
-      <button id="login-google" class="waves-effect waves-light btng col s10 offset-s1 col m6 offset-m3" type="submit">Google</button>
+      <p class="center-align col s9 offset-s1 m6 offset-m3">Regístrate con tu cuenta de:</p>
+      <button id="login-google" class="waves-effect waves-light btng col s6 offset-s3 col m6 offset-m3" type="submit">Google</button>
     </div>
     <!--Inicio de sesión manual con correo y contraseña-->
     <div class="col s12 m12">
       <p class="center-align col s12 m12 l12">o
         <br> Ingresa tus datos
         <br> manualmente</p>
-      <input class="col s9 offset-s2 col m6 offset-m3 in-log validate center-align" placeholder="Ingresa tu nombre">
-      <input class="col s9 offset-s2 col m6 offset-m3 in-log validate center-align" id="email" placeholder="Ingresa tu e-mail" type="email" required="">
-      <input class="col s9 offset-s2 col m6 offset-m3 in-log validate center-align" id="password" placeholder="Ingresa tu contraseña" type="password"
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" placeholder="Ingresa tu nombre">
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="email" placeholder="Ingresa tu e-mail" type="email" required="">
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="password" placeholder="Ingresa tu contraseña" type="password"
         required="">
-      <button class="marg-top-s col s10 offset-s1 col m6 offset-m3 btn-reg waves-effect waves-light" id="btnLogin">Iniciar sesión</button>
+      <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btnLogin">Iniciar sesión</button>
     </div>
     <!--Inicio de sesión con código enviado a número de celular-->
     <div class="col s12 marg-top-s">
       <p class="center-align col s12">Si lo prefieres <br> recibe un código <br> en tu celular</p>
-      <input type="text" class="col s9 offset-s2 col m6 offset-m3 in-log validate center-align" id="num-cel" placeholder="Tu número de celular">
-      <button class=" col s5 offset-s6 col m6 offset-m3 btn-reg waves-effect waves-light" id="btNum">Enviar código</button>
+      <input type="text" class="col s6 offset-s3 col m6 offset-m3 in-log validate center-align" id="num-cel" placeholder="Tu número de celular" value="+521">
+      <button class=" col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btNum">Enviar código</button>
       <div id="recaptcha-container" class="marg-top-s center-align col s9 offset-s1"></div>
-      <input type="text" class="marg-top-s col s9 offset-s2 col m6 offset-m3 in-log validate center-align" id="code" placeholder="Tu código">
-      <button class="marg-top-s col s10 offset-s1 col m6 offset-m3 btn-reg waves-effect waves-light" id="code-validate">Iniciar sesión</button>
+      <input type="text" class="marg-top-s col s6 offset-s3 col m6 offset-m3 in-log validate center-align" id="sentCode" placeholder="Tu código">
+      <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btCode">Iniciar sesión</button>
     </div>
   </main>
 
