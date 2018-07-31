@@ -35,11 +35,11 @@ let saveData = (user) => {
 }
 
 //Checando login con teléfono
-firebase.auth().onAuthStateChanged(function(usuaria) {
+firebase.auth().onAuthStateChanged(function (usuaria) {
   if (usuaria) {
-      console.log("Exitoso")
+    console.log("Exitoso")
   } else {
-      console.log("Fallido")
+    console.log("Fallido")
   }
 });
 
@@ -58,27 +58,36 @@ btnNumber.addEventListener('click', function () {
   firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
     .then(function (confirmationResult) {
       console.log(confirmationResult)
+
+      //Confirmando código
       window.confirmationResult = confirmationResult
+
     }).catch(function (error) {
       console.log(error)
     });
 })
 
-btnCode.addEventListener('click', function(){
+//Validar usuaria
+btnCode.addEventListener('click', function () {
   var validCode = document.getElementById('sentCode').value
   console.log(validCode)
-  window.confirmationResult.confirm(code)
-  .then(function (result) {
-    // User signed in successfully.
-    var user = result.user;
-    console.log(user)
-    firebase.database().ref("phone/usuarias/" + user.uid).update({
-      uid:user.uid,
-      phoneNumber:user.phoneNumber
-    })
+  window.confirmationResult.confirm(validCode)
+    .then(function (result) {
+      // Login funcional 
+      var user = result.user;
+      console.log(user);
+      savePhone(result.user);
 
-  }).catch(function (error) {
-    console.log(error)
-  });
+    }).catch(function (error) {
+      console.log(error)
+    });
 })
 
+let savePhone = (user) => {
+  const phone = {
+    uid: user.uid,
+    phoneNumber: user.phoneNumber
+  }
+  firebase.database().ref("phone/usuarias/" + user.uid)
+    .set(phone)
+}
