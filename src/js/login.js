@@ -8,12 +8,12 @@ $('#login-google').click(function () {
     .then(function (result) {
       console.log(result.user);
       saveData(result.user);
-      // signIn(result.user);
-      $('#auth-login').hide();
-      $('#auth-login2').hide();
-      $('#photo').append("<img src='" + result.user.photoURL + "'/>");
-      $('#data').append("<div> " + result.user.displayName + " </div>");
-      $('#data2').append("<div> " + result.user.email + " </div>");
+      //Imprimiendo los datos de la usuaria con JQuery
+      // $('#auth-login').hide();
+      // $('#auth-login2').hide();
+      // $('#photo').append("<img src='" + result.user.photoURL + "'/>");
+      // $('#data').append("<div> " + result.user.displayName + " </div>");
+      // $('#data2').append("<div> " + result.user.email + " </div>");
     })
   // .then(function (profile) {
   //   signIn(result.user);
@@ -40,7 +40,7 @@ const btnNumber = document.getElementById("btNum");
 const btnCode = document.getElementById("btCode");
 
 
-//Login con número
+//Login con número de celular
 btnNumber.addEventListener('click', function () {
   let phoneNumber = document.getElementById("num-cel").value;
   console.log(phoneNumber)
@@ -51,7 +51,7 @@ btnNumber.addEventListener('click', function () {
     .then(function (confirmationResult) {
       console.log(confirmationResult)
 
-      //Confirmando código
+      //Confirmando código de validación
       window.confirmationResult = confirmationResult
 
     }).catch(function (error) {
@@ -65,7 +65,7 @@ btnCode.addEventListener('click', function () {
   console.log(validCode)
   window.confirmationResult.confirm(validCode)
     .then(function (result) {
-      
+
       // Login funcional 
       var user = result.user;
       console.log(user);
@@ -85,6 +85,3 @@ let savePhone = (user) => {
   firebase.database().ref("phone/usuarias/" + user.uid)
     .set(phone)
 }
-
-
-
