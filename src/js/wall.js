@@ -11,8 +11,8 @@ form.addEventListener('submit', publicar);
 
 function publicar(event) {
   event.preventDefault();  
-    let mensajes = document.getElementById("comentario").value;// ingresa texto usuario y se guarda en variable mensajes
-  console.log("hola Amalia");
+    let mensajes = document.getElementById("mensaje").value;// ingresa texto usuario y se guarda en variable mensajes
+  //console.log("hola Amalia");
     if ( mensajes !== "" ) {
       db.collection("usuaria").add({
         mensaje: mensajes,
@@ -41,8 +41,8 @@ function publicar(event) {
         publicacion.innerHTML += `
         <article class="post">
             <p>${doc.data().mensaje}</p>
-            <a class="post-eliminar" onclick="eliminar('${doc.id}')">Eliminar</a>
-            <a class="post-editar" onclick="editar('${doc.id}','${doc.data().mensaje}')">Editar</a>
+            <a class="post-eliminar" onclick="eliminar('${doc.id}')"><i class="material-icons">delete</i></a>
+            <a class="post-editar" onclick="editar('${doc.id}','${doc.data().mensaje}')"><i class="material-icons">create</i></a>
             
         </article>
         `
@@ -62,7 +62,7 @@ function publicar(event) {
   //Editar documentos
   function editar(id,mensaje) {
     document.getElementById("comentario").value = mensaje;
-    let boton = document.getElementById('boton');
+    let boton = document.getElementById("boton");
     boton.innerHTML = "Editar";
     boton.onclick = function (){
       const washingtonRef = db.collection("usuaria").doc(id);
@@ -73,8 +73,9 @@ function publicar(event) {
       })
       .then(function() {
           console.log("Document successfully updated!");
-          boton.innerHTML = "Guardar";
           document.getElementById("comentario").value = "";
+          boton.innerHTML = "Guardar";
+          
       })
       .catch(function(error) {
           console.error("Error updating document: ", error);
@@ -98,9 +99,9 @@ function publicar(event) {
   
 
 
-  //   let LikesButton = document.getElementById('Like'),
-  //   counter = 0;
-  //   function likes(id) {
-  //   counter += 1;
-  //   LikesButton.innerHTML = 'Likes: ' + counter;
-  //  };
+    let LikesButton = document.getElementById('Like'),
+    counter = 0;
+    function likes(id) {
+    counter += 1;
+    LikesButton.innerHTML = 'Likes: ' + counter;
+   };
