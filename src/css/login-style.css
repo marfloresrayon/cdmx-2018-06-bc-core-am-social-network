@@ -36,6 +36,16 @@
     border: none;
 }
 
+.btnt{
+    background-color: white;
+    color: #006dbf;
+    text-align: center;
+    padding: .5em !important;
+    border-radius: 10px;
+    border: solid;
+    border-color: #006dbf;
+}
+
 .in-log{
     /* margin-left: 12% !important; */
     border: 1px solid !important;
