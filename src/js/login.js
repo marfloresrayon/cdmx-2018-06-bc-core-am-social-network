@@ -27,6 +27,7 @@ $('#login-google').click(function () {
     .then(function (result) {
       console.log(result.user);
       saveData(result.user);
+      location.href = ('../views/profile.html');
       //Imprimiendo los datos de la usuaria con JQuery
       // $('#auth-login').hide();
       // $('#auth-login2').hide();
@@ -65,6 +66,7 @@ registerUser.addEventListener('click', function () {
       let user = result.user;
       console.log(user)
       registeredUser(result.user);
+      location.href = ('../views/profile.html');
     })
     .catch(function (error) {
       console.log(error)
@@ -96,6 +98,7 @@ loginUser.addEventListener('click', function () {
     .then(function (result) {
       let user = result.user
       console.log(user)
+      location.href = ('../views/profile.html');
     })
     .catch(function (error) {
       console.log(error)
@@ -139,6 +142,7 @@ btnCode.addEventListener('click', function () {
       var user = result.user;
       console.log(user);
       savePhone(result.user);
+      location.href = ('../views/profile.html');
 
     }).catch(function (error) {
       console.log(error)

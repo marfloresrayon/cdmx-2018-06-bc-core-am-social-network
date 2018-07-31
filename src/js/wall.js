@@ -99,9 +99,9 @@ function publicar(event) {
   
 
 
-    let LikesButton = document.getElementById('Like'),
-    counter = 0;
-    function likes() {
-    counter += 1;
-    LikesButton.innerHTML = 'Likes: ' + counter;
-   };
+   //  let LikesButton = document.getElementById('Like'),
+   //  counter = 0;
+   //  function likes() {
+   //  counter += 1;
+   //  LikesButton.innerHTML = 'Likes: ' + counter;
+   // };
