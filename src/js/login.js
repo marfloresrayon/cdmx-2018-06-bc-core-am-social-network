@@ -34,26 +34,18 @@ let saveData = (user) => {
     .set(usuaria)
 }
 
-//Checando login con teléfono
-firebase.auth().onAuthStateChanged(function (usuaria) {
-  if (usuaria) {
-    console.log("Exitoso")
-  } else {
-    console.log("Fallido")
-  }
-});
 
-//Parte que se moverá a DOM
-var btnNumber = document.getElementById("btNum");
-var btnCode = document.getElementById("btCode");
+//Manipulación de DOM
+const btnNumber = document.getElementById("btNum");
+const btnCode = document.getElementById("btCode");
 
 
 //Login con número
 btnNumber.addEventListener('click', function () {
-  var phoneNumber = document.getElementById("num-cel").value;
+  let phoneNumber = document.getElementById("num-cel").value;
   console.log(phoneNumber)
   window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-  var appVerifier = window.recaptchaVerifier;
+  let appVerifier = window.recaptchaVerifier;
 
   firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
     .then(function (confirmationResult) {
@@ -69,10 +61,11 @@ btnNumber.addEventListener('click', function () {
 
 //Validar usuaria
 btnCode.addEventListener('click', function () {
-  var validCode = document.getElementById('sentCode').value
+  let validCode = document.getElementById('sentCode').value
   console.log(validCode)
   window.confirmationResult.confirm(validCode)
     .then(function (result) {
+      
       // Login funcional 
       var user = result.user;
       console.log(user);
@@ -83,6 +76,7 @@ btnCode.addEventListener('click', function () {
     });
 })
 
+//Guardar datos de manera automática
 let savePhone = (user) => {
   const phone = {
     uid: user.uid,
@@ -91,3 +85,6 @@ let savePhone = (user) => {
   firebase.database().ref("phone/usuarias/" + user.uid)
     .set(phone)
 }
+
+
+
