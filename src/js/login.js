@@ -64,6 +64,7 @@ registerUser.addEventListener('click', function () {
     .then(function (result) {
       let user = result.user;
       console.log(user)
+      registeredUser(result.user);
     })
     .catch(function (error) {
       console.log(error)
@@ -74,24 +75,22 @@ registerUser.addEventListener('click', function () {
 });
 
 //Guardando data de manera automática
-// let registeredUser = (user) => {
-//   const usuaria = {
-//     uid: user.uid,
-//     nombre: user.displayName,
-//     correo: user.email,
-//     contraseña: user.
-//     foto: user.photoURL
-//   }
-//   firebase.database().ref("registro/usuarias/" + user.uid)
-//     .set(usuaria)
-// }
+let registeredUser = (user) => {
+  const registro = {
+    uid: user.uid,
+    nombre: user.displayName,
+    correo: user.email,
+  }
+  firebase.database().ref("registro/usuarias/" + user.uid)
+    .set(registro)
+}
 
 //Login de usuarias registradas con correo y contraseña
-let loginUser = document.getElementById('btnLogin')
+let loginUser = document.getElementById('btnLogin2')
 
 loginUser.addEventListener('click', function () {
-  const loginEmail = document.getElementById('loginEmail').value
-  const loginPassword = document.getElementById('loginPassword').value
+  const loginEmail = document.getElementById('loginEmail2').value
+  const loginPassword = document.getElementById('loginPassword2').value
 
   firebase.auth().signInWithEmailAndPassword(loginEmail, loginPassword)
     .then(function (result) {
