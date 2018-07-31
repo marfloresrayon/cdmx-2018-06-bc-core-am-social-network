@@ -1,3 +1,22 @@
+//Observador de estado de autenticación
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    console.log(user)
+    // User is signed in.
+    const displayName = user.displayName;
+    const email = user.email;
+    const emailVerified = user.emailVerified;
+    const photoURL = user.photoURL;
+    const isAnonymous = user.isAnonymous;
+    const uid = user.uid;
+    const providerData = user.providerData;
+  } else {
+    // User is signed out.
+    console.log('La usuaria no ha iniciado sesión')
+  }
+});
+
+
 //Creando Login con Google
 console.log("google activo");
 var provider = new firebase.auth.GoogleAuthProvider();
@@ -22,7 +41,7 @@ $('#login-google').click(function () {
 });
 
 
-//Guardando los datos de forma automática
+//Guardando los datos de forma automática para Login con Google
 let saveData = (user) => {
   const usuaria = {
     uid: user.uid,
@@ -33,6 +52,57 @@ let saveData = (user) => {
   firebase.database().ref("usuarias/" + user.uid)
     .set(usuaria)
 }
+
+//Registro con e-mail y contraseña
+let registerUser = document.getElementById('btnRegister')
+
+registerUser.addEventListener('click', function () {
+  const eMail = document.getElementById('email').value
+  const passWord = document.getElementById('password').value
+
+  firebase.auth().createUserWithEmailAndPassword(eMail, passWord)
+    .then(function (result) {
+      let user = result.user;
+      console.log(user)
+    })
+    .catch(function (error) {
+      console.log(error)
+      // Handle Errors here.
+
+    })
+
+});
+
+//Guardando data de manera automática
+// let registeredUser = (user) => {
+//   const usuaria = {
+//     uid: user.uid,
+//     nombre: user.displayName,
+//     correo: user.email,
+//     contraseña: user.
+//     foto: user.photoURL
+//   }
+//   firebase.database().ref("registro/usuarias/" + user.uid)
+//     .set(usuaria)
+// }
+
+//Login de usuarias registradas con correo y contraseña
+let loginUser = document.getElementById('btnLogin')
+
+loginUser.addEventListener('click', function () {
+  const loginEmail = document.getElementById('loginEmail').value
+  const loginPassword = document.getElementById('loginPassword').value
+
+  firebase.auth().signInWithEmailAndPassword(loginEmail, loginPassword)
+    .then(function (result) {
+      let user = result.user
+      console.log(user)
+    })
+    .catch(function (error) {
+      console.log(error)
+    });
+
+})
 
 
 //Manipulación de DOM para Login con teléfono

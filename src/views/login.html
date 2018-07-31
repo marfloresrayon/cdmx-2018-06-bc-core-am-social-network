@@ -34,15 +34,25 @@
       <p class="center-align col s10 offset-s1 m6 offset-m3">Regístrate con tu cuenta de:</p>
       <button id="login-google" class="waves-effect waves-light btng col s6 offset-s3 col m6 offset-m3" type="submit">Google</button>
     </div>
-    <!--Inicio de sesión manual con correo y contraseña-->
+    <!--Registro de usuaria manual con correo y contraseña-->
     <div class="col s12 m12">
       <p class="center-align col s12 m12 l12">o
         <br> Ingresa tus datos
         <br> manualmente</p>
-      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" placeholder="Ingresa tu nombre">
       <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="email" placeholder="Ingresa tu e-mail"
         type="email" required="">
       <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="password" placeholder="Ingresa tu contraseña"
+        type="password" required="">
+      <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btnRegister">Registrarme</button>
+    </div>
+    <!--Inicio de sesión para usuaria registrada-->
+    <div class="marg-top-s col s12 m12">
+        <p class="center-align col s12 m12 l12">
+            <br> Si ya te has registrado
+            <br> inicia sesión</p>
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="loginEmail" placeholder="Ingresa tu e-mail"
+        type="email" required="">
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="loginPassword" placeholder="Ingresa tu contraseña"
         type="password" required="">
       <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btnLogin">Iniciar sesión</button>
     </div>
