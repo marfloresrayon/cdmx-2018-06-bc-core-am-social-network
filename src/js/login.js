@@ -35,7 +35,7 @@ let saveData = (user) => {
 }
 
 
-//Manipulación de DOM
+//Manipulación de DOM para Login con teléfono
 const btnNumber = document.getElementById("btNum");
 const btnCode = document.getElementById("btCode");
 
