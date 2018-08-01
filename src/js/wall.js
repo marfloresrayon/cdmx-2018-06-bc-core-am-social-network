@@ -6,10 +6,13 @@ firebase.initializeApp({
 
 let db = firebase.firestore();
 
-const form = document.getElementById('form');
-form.addEventListener('submit', publicar);
+let publicar = document.getElementById("boton");
 
-function publicar(event) {
+// const form = document.getElementById("form");
+// form.addEventListener('submit', publicar);
+
+
+publicar.addEventListener("click", ()=> {
   event.preventDefault();  
     let mensajes = document.getElementById("mensaje").value;// ingresa texto usuario y se guarda en variable mensajes
   //console.log("hola Amalia");
@@ -17,74 +20,84 @@ function publicar(event) {
       db.collection("usuaria").add({
         mensaje: mensajes,
       })
-      .then(function(docRef) {
+      .then((docRef)=> {
         console.log("Document written with ID: ", docRef.id);
         document.getElementById("comentario").value = "";
       })
-      .catch(function(error) {
+      .catch((error)=> {
         console.error("Error adding document: ", error);
       })
     
     } else {
-      alert('ingresa tu mensaje');
+      alert("ingresa tu mensaje");
     }
     //console.log(mensaje);
-  }
-  
-  let publicacion = document.getElementById("publicacion");
-  db.collection("usuaria").onSnapshot((querySnapshot) => {
-    publicacion.innerHTML= "";
-    querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data().mensaje}`);
-        //para usuario va <th scope="row">${doc.id}</th>
-        //probar iinsertAdjacentHTML(beforebegin, texto) para que ordene pùblicaciones
-        publicacion.innerHTML += `
-        <article class="post">
-            <p>${doc.data().mensaje}</p>
-            <a class="post-eliminar" onclick="eliminar('${doc.id}')"><i class="material-icons">delete</i></a>
-            <a class="post-editar" onclick="editar('${doc.id}','${doc.data().mensaje}')"><i class="material-icons">create</i></a>
-            
-        </article>
-        `
-    });
-  });
-  
-  //Borrar datos
-  function eliminar(id) {
-    db.collection("usuaria").doc(id).delete().then(function() {
-      console.log("Document successfully deleted!");
-    }).catch(function(error) {
-      console.error("Error removing document: ", error);
-    });
-  
-  }
-  
-  //Editar documentos
-  function editar(id,mensaje) {
-    document.getElementById("comentario").value = mensaje;
-    let boton = document.getElementById("boton");
-    boton.innerHTML = "Editar";
-    boton.onclick = function (){
-      const washingtonRef = db.collection("usuaria").doc(id);
-      let mensaje = document.getElementById("comentario").value;
-  
-      return washingtonRef.update({
-        mensaje: mensaje,
-      })
-      .then(function() {
-          console.log("Document successfully updated!");
-          document.getElementById("comentario").value = "";
-          boton.innerHTML = "Guardar";
-          
-      })
-      .catch(function(error) {
-          console.error("Error updating document: ", error);
-      });
-  
-    };
-  
-    }
+  })
 
+let publicacion = document.getElementById("publicacion");
+db.collection("usuaria").onSnapshot((querySnapshot) => {
+  publicacion.innerHTML= "";
+  querySnapshot.forEach((doc) => {
+      console.log(`${doc.id} => ${doc.data().mensaje}`);
+      //para usuario va <th scope="row">${doc.id}</th>
+      //probar iinsertAdjacentHTML(beforebegin, texto) para que ordene pùblicaciones
+      publicacion.innerHTML += `
+      <article class="post">
+          <p>${doc.data().mensaje}</p>
+          <a class="post-eliminar" onclick="eliminar('${doc.id}')"><i class="material-icons">delete</i></a>
+          <a class="post-editar" onclick="editar('${doc.id}','${doc.data().mensaje}')"><i class="material-icons">edit </i></a>
+      </article>
+      `
+  });
+});
+
+//Borrar datos
+function eliminar(id) {
+  db.collection("usuaria").doc(id).delete().then(function() {
+    console.log("Document successfully deleted!");
+  }).catch(function(error) {
+    console.error("Error removing document: ", error);
+  });
+
+}
+
+//Editar documentos
+function editar(id,mensaje) {
+  document.getElementById("mensaje").value = mensaje;
+  let boton = document.getElementById('boton');
+  boton.innerHTML = "Editar";
+  boton.onclick = function (){
+    const washingtonRef = db.collection("usuaria").doc(id);
+    let mensaje = document.getElementById("mensaje").value;
+
+    return washingtonRef.update({
+      mensaje: mensaje,
+    })
+    .then(function() {
+        console.log("Document successfully updated!");
+        boton.innerHTML = "Guardar";
+        document.getElementById("mensaje").value = "";
+    })
+    .catch(function(error) {
+        console.error("Error updating document: ", error);
+    });
+
+  }
+
+  }
+ 
+
+
+
+
+  let LikesButton = document.getElementById("Like"),
+  counter = 0;
+  LikesButton.onclick = function() {
+  counter += 1;
+  LikesButton.innerHTML = '<i class="material-icons">favorite </i> ' + counter;
+  };
+
+  
     // let likes = o;
     // const like =(id)=>{
     //     let collection("usuaria").child(id);
