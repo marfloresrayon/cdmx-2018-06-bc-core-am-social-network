@@ -39,11 +39,3 @@ firebase.auth().onAuthStateChanged(function(user) {
     console.log('La usuaria no ha iniciado sesión')
   }
 });
-
-
-// <article class="post">
-//             <p>${doc.data().mensaje}</p>
-//             <a class="post-eliminar" onclick="eliminar('${doc.id}')"><i class="material-icons">delete</i></a>
-//             <a class="post-editar" onclick="editar('${doc.id}','${doc.data().mensaje}')"><i class="material-icons">create</i></a>
-            
-//         </article>
