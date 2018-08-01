@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> UX-COM </title>
+  <link rel="stylesheet" href="../css/login-style.css">
   <link rel="stylesheet" href="../css/profile-style.css">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Neuton|Work+Sans" rel="stylesheet">
-
 </head>
 
 <body>
@@ -42,12 +42,14 @@
       <li>
         <div class="user-view">
           <div class="background">
-            <img id="photo-usuaria" alt="fondo-sidenav">
+            <img src="../images/Web/fondoSideNav.jpg" alt="fondo-sidenav">
           </div>
             <img class="circle" src="../images/Web/avatar.png" alt="foto-perfil">
-            <div class="white-text name">María Gutierrez</span>
-            <span class="white-text email">mariagutierrez@gmail.com</span>
+            <span class="white-text name">Nombre</span>
+            <span class="white-text email">E-mail</span>
         </div>
+
+
       </li>
       <li>
         <a class="waves-effect" href="profile.html">
@@ -61,7 +63,7 @@
         <div class="divider"></div>
       </li>
       <li>
-        <a class="waves-effect" href="login.html">
+        <a class="waves-effect" href="login.html" id="logout">
           <i class="material-icons">settings_power</i>Cerrar cesión</a>
       </li>
     </ul>
@@ -70,12 +72,12 @@
     <!--Inicio NavBar Desktop-->
     <nav class="navDesktop hide-on-small-only">
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center">
+        <a class="brand-logo center">
           <img class="logoNavDesktop" src="../images/Web/LOGO_UX-COMmini.png" alt="logo-uxcom">
         </a>
         <ul class="left hide-on-med-and-down">
           <li>
-            <a href="login.html">Cerrar cesión</a>
+            <a href="login.html">Cerrar sesión</a>
           </li>
           <li>
             <a href="wall.html">Muro</a>
@@ -101,8 +103,11 @@
         
       </div>
       <div class="row ">
+          <span class="col s6 offset-s3 m6 offset-m3">
+              Nombre
+            </span>
         <span class="col s6 offset-s3 m6 offset-m3">
-          mariagutierrez@gmail.com
+          E-mail
         </span>
       </div>
     </div>
