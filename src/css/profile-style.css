@@ -1,7 +1,7 @@
 /*-----Clases generales---------*/
 .font-title{
     font-family:'Neuton', Serif;
-    font-Size: 18px;
+    font-Size: 20px;
 }
 
 .font-text{
@@ -111,10 +111,28 @@ nav a {
 
 /*----Inicio Proyectos de Usuaria--*/
 .btnCompartir{
- background-color: #45A2E0;
+ background-color: #893662;
  color: white;
  border: none;
  border-radius: 5px;
     height: 2em;
 }
+
+.text-st{
+    border-color: solid 1px #893662;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.btn-p{
+    color:  #893662;
+}
+
+.borde{
+    border: solid 1px #893662;
+    border-radius: 5px;
+    margin-top: 3em;
+    padding: 1.5em;
+}
+
 /*----Fin Proyectos de Usuaria--*/
