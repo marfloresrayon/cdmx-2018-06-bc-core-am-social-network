@@ -8,17 +8,7 @@ $(document).ready(function () {
 });
 //Termina NavBar de Materialize 
 
-//Manejo de DOM para cerrar sesión
-let logOut = document.getElementById('logout')
 
-//Cerrar sesión
-logOut.addEventListener('click', function () {
-  firebase.auth().signOut().then(function () {
-    console.log("Sesión cerrada")
-  }).catch(function (error) {
-    console.log(error)
-  });
-})
 
 //Observador de estado de autenticación
 firebase.auth().onAuthStateChanged(function(user) {
