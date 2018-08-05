@@ -1,5 +1,13 @@
+//Registro con e-mail y contraseña
+let registerUser = document.getElementById('btnRegister')
+//Login de usuarias registradas con correo y contraseña
+let loginUser = document.getElementById('btnLogin2')
+//Manipulación de DOM para Login con teléfono
+const btnNumber = document.getElementById("btNum");
+const btnCode = document.getElementById("btCode");
+
 //Observador de estado de autenticación
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
     console.log(user)
     // User is signed in.
@@ -55,8 +63,6 @@ let saveData = (user) => {
 }
 
 //Registro con e-mail y contraseña
-let registerUser = document.getElementById('btnRegister')
-
 registerUser.addEventListener('click', function () {
   const eMail = document.getElementById('email').value
   const passWord = document.getElementById('password').value
@@ -88,8 +94,6 @@ let registeredUser = (user) => {
 }
 
 //Login de usuarias registradas con correo y contraseña
-let loginUser = document.getElementById('btnLogin2')
-
 loginUser.addEventListener('click', function () {
   const loginEmail = document.getElementById('loginEmail2').value
   const loginPassword = document.getElementById('loginPassword2').value
@@ -105,11 +109,6 @@ loginUser.addEventListener('click', function () {
     });
 
 })
-
-
-//Manipulación de DOM para Login con teléfono
-const btnNumber = document.getElementById("btNum");
-const btnCode = document.getElementById("btCode");
 
 
 //Login con número de celular
