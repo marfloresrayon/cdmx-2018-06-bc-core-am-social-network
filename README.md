@@ -37,14 +37,12 @@ Experiencia de Usuaria comparta experiencias, conocimientos, herramientas y
 recursos, generando relaciones profesionales y un crecimiento conjunto como 
 parte de una comunidad activa y visible dentro del mundo tech. 
 
-Diseñamos la interfaz como una experiencia intuitiva, creamos una página web fácil de 
+* Diseñamos la interfaz como una experiencia intuitiva, creamos una página web fácil de 
 explorar, permitiendo que el contenido sobresalga.
-La paleta de colores elegida gira en torno a la idea de femineidad tecnológica, 
-creativa e innovadora. 
-Usando una tipografía _____ para los títulos y una ________ para el texto, creamos 
+* Usamos una tipografía serif para los títulos y una sans-serif para el texto, creando 
 un sistema tipográfico funcional. 
-Apuntamos a generar un sentido de profesionalismo y simplicidad moderna. La red social 
-es accesible a través de dispositivos móviles. 
+* Apuntamos a generar un sentido de profesionalismo y simplicidad moderna. 
+* La red social es accesible a través de dispositivos móviles. 
 
 ## :dart: Objetivos
 
@@ -160,11 +158,41 @@ debido a su éxito, uso y crecimiento continuo:
 
 ## :art: Logo y paleta de colores
 
+* Diseñamos un logo que comunicara de manera efectiva la temática de nuestra red 
+social, hacemos referencia al proceso de diseño de experiencia de usuario con las 
+herramientas que forman la letra "X" de UX. 
+Por otra parte, enfatizamos la idea de comunidad que deseamos comunicar en UX-COM, 
+con las primeras tres letras de la palabra comunidad.
+
 ![LogIn UX-COM](/src/images/LogoPaleta/logouxcom.png)
 
+* A partir del benchmark realizado notamos que las paletas de color más comunes
+contenían colores violetas y azulados. Tomamos esto en cuenta al elegir los
+colores que presentamos a continuación: 
+ 
 ![Paleta de colores](/src/images/LogoPaleta/paleta-colores.png)
+
+* Nuestra paleta de colores gira en torno a la idea de femineidad tecnológica, 
+creativa e innovadora. 
 
 ## :iphone: Mockup
 ![LogIn UX-COM](/src/images/Mockup/ruxcom.png)
 
 ![Perfil UX-COM](/src/images/Mockup/Perfil-usuaria.png)
+
+
+# :woman::iphone: User testing
+
+Testing realizado con 3 usuarias a las que se les pidió usar la red social
+UX-COM y cumplir con los siguientes objetivos:
+
+* Ingresar a la red social por el medio de su preferencia
+* Hacer un cometario en el muro
+* Editar el comentario creado
+* Borrar el comentario creado
+* Ingresar al apartado su perfil
+* Cerrar sesión
+
+
+Observaciones recopiladas en el testing de la interfaz final:
+
